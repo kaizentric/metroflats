@@ -1,0 +1,1 @@
+This folder contains files previously in the 'fix' directory, archived for backup and reference. You can safely delete this folder if you no longer need these files.
