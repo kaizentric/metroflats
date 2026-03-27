@@ -1,0 +1,400 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>MetroFlats UK – Property Estimator & Feasibility</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root{ --ink:#0f172a; --muted:#677084; --soft:#e7eef5; --brand:#1e40af; --brand2:#3b82f6; --card:#ffffff; }
+      body{background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);color:var(--ink)}
+      .navbar{background:linear-gradient(90deg,#1e40af,#3b82f6)}
+      .navbar .navbar-brand,.navbar .navbar-text{color:#fff}
+      .card-soft{border:1px solid #dbeafe;box-shadow:0 4px 14px rgba(30,64,175,.08);background:var(--card);border-radius:18px}
+      .mapbox{width:100%;height:440px;border:1px solid #e7eef5;border-radius:12px}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .prewrap{white-space:pre-wrap}
+      .badge-soft{background:#eff6ff;color:#1e40af;border-radius:999px}
+      .nav-tabs{border-bottom:2px solid #1e40af}
+      .stat{border:1px solid #e7eef5;border-radius:16px;padding:14px 16px;background:#fff}
+      .stat .label{color:#677084;font-size:.9rem}
+      .stat .value{font-weight:700;font-size:1.15rem}
+      .btn-pill{border-radius:999px}
+      .form-help{font-size:.85rem;color:#677084}
+      .finder-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+      @media (max-width: 992px){ .finder-cards{grid-template-columns:1fr} }
+      .prop-card{border:1px solid #e7eef5;border-radius:16px;background:#fff;padding:14px;transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;}
+      .prop-card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,30,60,.08)}
+      .prop-title{font-weight:800}
+      .pill{border-radius:999px;padding:.2rem .55rem;background:#f1f5ff;border:1px solid #e7eef5;font-size:.8rem}
+      .rating{display:inline-flex;align-items:center;gap:6px}
+      .rating .star{color:#f59e0b}
+      .next-steps-notice{
+        background:linear-gradient(135deg,#1e40af,#3b82f6);
+        color:white;
+        padding:16px;
+        margin-top:20px;
+        border-radius:12px;
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>MetroFlats UK – Property Estimator & Feasibility</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+              :root{ --ink:#0f172a; --muted:#677084; --soft:#e7eef5; --brand:#1e40af; --brand2:#3b82f6; --card:#ffffff; }
+              body{background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);color:var(--ink)}
+              .navbar{background:linear-gradient(90deg,#1e40af,#3b82f6)}
+              .navbar .navbar-brand,.navbar .navbar-text{color:#fff}
+              .card-soft{border:1px solid #dbeafe;box-shadow:0 4px 14px rgba(30,64,175,.08);background:var(--card);border-radius:18px}
+              .mapbox{width:100%;height:440px;border:1px solid #e7eef5;border-radius:12px}
+              .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+              .prewrap{white-space:pre-wrap}
+              .badge-soft{background:#eff6ff;color:#1e40af;border-radius:999px}
+              .nav-tabs{border-bottom:2px solid #1e40af}
+              .stat{border:1px solid #e7eef5;border-radius:16px;padding:14px 16px;background:#fff}
+              .stat .label{color:#677084;font-size:.9rem}
+              .stat .value{font-weight:700;font-size:1.15rem}
+              .btn-pill{border-radius:999px}
+              .form-help{font-size:.85rem;color:#677084}
+              .finder-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+              @media (max-width: 992px){ .finder-cards{grid-template-columns:1fr} }
+              .prop-card{border:1px solid #e7eef5;border-radius:16px;background:#fff;padding:14px;transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;}
+              .prop-card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,30,60,.08)}
+              .prop-title{font-weight:800}
+              .pill{border-radius:999px;padding:.2rem .55rem;background:#f1f5ff;border:1px solid #e7eef5;font-size:.8rem}
+              .rating{display:inline-flex;align-items:center;gap:6px}
+              .rating .star{color:#f59e0b}
+              .next-steps-notice{
+                background:linear-gradient(135deg,#1e40af,#3b82f6);
+                color:white;
+                padding:16px;
+                margin-top:20px;
+                border-radius:12px;
+                text-align:center;
+                font-weight:bold;
+                box-shadow:0 4px 12px rgba(30,64,175,0.3);
+                border:2px solid #1d4ed8;
+              }
+              .next-steps-notice:hover{
+                transform:translateY(-1px);
+                box-shadow:0 6px 16px rgba(30,64,175,0.4);
+              }
+              /* ...rest of the file omitted for brevity... */
+          </head>
+          <body>
+            ...new content...
+      .chat-avatar.user {
+        background: #0d6efd;
+        color: white;
+      }
+      .chat-avatar.assistant {
+        background: #198754;
+        color: white;
+      }
+      .chat-bubble {
+        max-width: 75%;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+        position: relative;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        line-height: 1.4;
+      }
+      .chat-bubble.user {
+        background: #0d6efd;
+        color: white;
+        border-bottom-right-radius: 0.25rem;
+      }
+      .chat-bubble.assistant {
+        background: white;
+        color: #333;
+        border: 1px solid #dee2e6;
+        border-bottom-left-radius: 0.25rem;
+      }
+      .chat-bubble.assistant.typing {
+        background: #f8f9fa;
+        font-style: italic;
+        color: #6c757d;
+      }
+      #chatContainer {
+        scroll-behavior: smooth;
+      }
+      #chatContainer::-webkit-scrollbar {
+        width: 6px;
+      }
+      #chatContainer::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      #chatContainer::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 3px;
+      }
+      #chatContainer::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      
+      /* Priority Dropdown Styles */
+      .priority-select {
+        min-width: 140px;
+        width: 140px;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+        background: white;
+        transition: all 0.2s ease;
+        font-weight: 500;
+        position: relative;
+      }
+      
+      .priority-select:focus,
+      .priority-select:active {
+        z-index: 999;
+      }
+      
+      .priority-select:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+      }
+      
+      .priority-select option {
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      
+      .priority-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        position: relative;
+        z-index: 1;
+        margin-left: 10px;
+        min-height: 50px;
+      }
+      
+      .priority-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: #6b7280;
+        margin-bottom: 2px;
+      }
+      
+      /* MetroFlats UK Theme Enhancements */
+      .btn-primary {
+        background: linear-gradient(135deg, #1e40af, #3b82f6);
+        border: none;
+        color: white;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
+      }
+      
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #1d4ed8, #2563eb);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+      }
+      
+      /* Advanced Filters Styling */
+      #advancedFilters .card-body {
+        max-height: 600px;
+        overflow-y: auto;
+      }
+      
+      #advancedFilters input[type="number"],
+      #advancedFilters select {
+        font-size: 13px;
+      }
+      
+      #advancedFilters .form-check-input:checked {
+        background-color: #3b82f6;
+        border-color: #3b82f6;
+      }
+      
+      /* Results info badge */
+      #pfResultCount {
+        font-weight: 600;
+        color: #1e40af;
+      }
+      
+      #pfActiveFilters .badge {
+        font-size: 11px;
+        padding: 4px 8px;
+      }
+      
+      /* Save/Compare buttons in cards */
+      .prop-card .btn-sm {
+        padding: 2px 6px;
+        font-size: 14px;
+        border-radius: 4px;
+        line-height: 1;
+      }
+      
+      .prop-card .btn-outline-secondary {
+        border-color: #d1d5db;
+      }
+      .prop-card .btn-danger {
+        background-color: #ef4444;
+        border-color: #ef4444;
+      }
+      .prop-card .btn-warning {
+        background-color: #f59e0b;
+        border-color: #f59e0b;
+        color: white;
+      }
+      
+      /* Pagination styling */
+      #pfPagination {
+        padding: 15px 0;
+      }
+      
+      #pfPageInfo {
+        font-weight: 600;
+        color: #677084;
+      }
+      
+      /* Sort dropdown */
+      #pfSortBy {
+        font-size: 13px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+        padding: 4px 8px;
+      }
+      
+      #pfSortBy:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        outline: none;
+      }
+      
+      .btn-outline-secondary {
+        border-color: #1e40af;
+        color: #1e40af;
+      }
+      .btn-outline-secondary:hover {
+        background-color: #1e40af;
+        border-color: #1e40af;
+      }
+      
+      .form-control:focus {
+        border-color: #1e40af;
+        box-shadow: 0 0 0 0.2rem rgba(30, 64, 175, 0.25);
+      }
+      
+      .form-select:focus {
+        border-color: #1e40af;
+        box-shadow: 0 0 0 0.2rem rgba(30, 64, 175, 0.25);
+      }
+      
+      /* POI Control Row Styles */
+      .poi-control-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 14px;
+        background: linear-gradient(135deg, #ffffff, #f8fafc);
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        margin-bottom: 12px;
+        transition: all 0.3s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+      
+      .poi-control-row:hover {
+        background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+        border-color: #cbd5e1;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      }
+      
+      .poi-legend-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        border: 2px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+      }
+      
+      .poi-left-section {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+      }
+      
+      .poi-switch {
+        display: flex;
+        align-items: center;
+      }
+      
+      .poi-switch .form-check-input {
+        margin-right: 8px;
+        transform: scale(1.1);
+      }
+      
+      .poi-switch .form-check-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #374151;
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      /* ===== Bulk Request (n8n) ===== */
+      /* Full-bleed section for wider outputs inside Bootstrap .container */
+      .bulk-fullbleed{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;padding-left:12px;padding-right:12px}
+      .bulk-wrap{max-width:1600px;margin:0 auto}
+      .bulk-kv{border:1px solid #e7eef5;border-radius:16px;background:#fff;padding:14px}
+      .bulk-kv h6{margin:0 0 10px;font-weight:800}
+      .bulk-kvrow{display:grid;grid-template-columns:140px minmax(0,1fr);gap:10px;padding:6px 0;border-top:1px solid #f1f5ff}
+      .bulk-kvrow:first-of-type{border-top:0}
+      .bulk-k{color:var(--muted);font-weight:700}
+      .bulk-v{overflow-wrap:break-word;word-break:normal}
+      .bulk-anywhere{overflow-wrap:anywhere;word-break:break-word}
+      /* Summary cards live in the left sidebar; keep them one-per-row to prevent cramped wrapping */
+      .bulk-grid{display:grid;grid-template-columns:1fr;gap:14px}
+      .bulk-tableWrap{max-height:520px;overflow:auto;border:1px solid #e7eef5;border-radius:16px;background:#fff}
+      .bulk-table{width:100%;border-collapse:separate;border-spacing:0;table-layout:auto;min-width:1200px}
+      .bulk-table th,.bulk-table td{padding:10px 12px;border-top:1px solid #f1f5ff;vertical-align:top}
+      .bulk-table th{position:sticky;top:0;z-index:2;background:#eff6ff;color:#1e40af;font-size:.9rem;border-top:0}
+      .bulk-table tbody tr:nth-child(even) td{background:#fcfcff}
+      .bulk-table tbody tr:hover td{background:#f1f5ff}
+      .bulk-num{text-align:right;font-variant-numeric:tabular-nums}
+      .bulk-cell{max-width:360px;white-space:normal;overflow-wrap:break-word;word-break:break-word;hyphens:auto;line-height:1.25rem}
+      .bulk-cell.small{max-width:240px}
+      .bulk-cell.wide{max-width:620px}
+      .bulk-nowrap{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .bulk-clamp{display:-webkit-box;-webkit-box-orient:vertical;line-clamp:6;-webkit-line-clamp:6;overflow:hidden}
+      .bulk-pill{display:inline-block;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:.85rem;border:1px solid #e7eef5;background:#f8fafc;color:var(--ink)}
+      .bulk-stickyCol{position:sticky;left:0;z-index:3;border-right:1px solid #e7eef5}
+      th.bulk-stickyCol{background:#eff6ff}
+      td.bulk-stickyCol{background:#fff}
+      .bulk-table tbody tr:nth-child(even) td.bulk-stickyCol{background:#fcfcff}
+
+      /* Column sizing hints (helps readability when many columns exist) */
+      .bulk-table th.col-request_id, .bulk-table td.col-request_id{min-width:96px}
+      .bulk-table th.col-city, .bulk-table td.col-city{min-width:90px}
+      .bulk-table th.col-location, .bulk-table td.col-location{min-width:200px}
+      .bulk-table th.col-property_type, .bulk-table td.col-property_type{min-width:120px}
+      .bulk-table th.col-action, .bulk-table td.col-action{min-width:170px}
+      .bulk-table th.col-batch_size, .bulk-table td.col-batch_size{min-width:100px}
+      .bulk-table th.col-best_option, .bulk-table td.col-best_option{min-width:340px}
+      .bulk-table th.col-final_recommendation, .bulk-table td.col-final_recommendation{min-width:280px}
+      .bulk-table th.col-recommendation, .bulk-table td.col-recommendation{min-width:280px}
+      .bulk-table th.col-recommendation_reasoning, .bulk-table td.col-recommendation_reasoning{min-width:360px}
+      .bulk-table th.col-reasoning, .bulk-table td.col-reasoning{min-width:360px}
+    </style>
+  </head>
+  <body>
+    ...existing code...
+  [Content from fix/index.html lines 2001-8000]
