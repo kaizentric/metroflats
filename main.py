@@ -1,6 +1,10 @@
-def main():
-    print("Hello from realestate!")
+from flask import Flask
 
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "MetroFlats Python backend is running!"
 
 if __name__ == "__main__":
-    main()
+    app.run(host="0.0.0.0", port=3000)
